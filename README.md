@@ -26,5 +26,5 @@ sys.stdout.write(outtext)
 ```
 
 ## TODO:
- * Detect img elements that are already data: URLs and leave them alone.
+ 
  * Add some sort of configuration to allow the user to exclude some img elements from inlining.
