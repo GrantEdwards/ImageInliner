@@ -17,6 +17,8 @@ class ImageInlinerProcessor(Treeprocessor):
         
     def run(self, root):
         for element in root.iter('img'):
+            if element.attrib['src'].startswith('data:'):
+                continue
             attrib = element.attrib
             tail = element.tail
             element.clear()
