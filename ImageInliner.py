@@ -1,9 +1,6 @@
-#!/usr/bin/python3
-
 from markdown.treeprocessors import Treeprocessor
 from markdown.extensions import Extension
-import sys, os, base64
-import requests
+import os, base64, requests
 
 class ImageInlinerProcessor(Treeprocessor):
     def __init__(self, md):
